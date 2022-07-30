@@ -1,0 +1,410 @@
+:root {
+	--accent-color: #ff6c00;
+	--light-text-color: #ffffff;
+	--dark-text-color: #555555;
+	--dark-title-color: #303030;
+	--grey-text-color: #9da4bd;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+.section {
+}
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}
+.btn {
+	font-family: inherit;
+}
+.pre-title {
+}
+.title {
+	font-family: "Raleway";
+}
+.after-title {
+}
+.logo {
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* --------header-------- */
+
+.header {
+	background-color: #191c26;
+}
+.header-nav {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+	font-weight: 600;
+	color: var(--light-text-color);
+}
+.header-link:hover,
+.header-link:focus {
+	color: var(--accent-color);
+}
+.header-connect {
+}
+.header-tel,
+.header-btn {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--light-text-color);
+}
+.header-btn {
+	border: 1px solid var(--accent-color);
+	border-radius: 25px;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+	background: var(--accent-color);
+}
+
+/* --------hero-------- */
+
+.hero {
+	background-color: #191c26;
+}
+.hero-list {
+}
+.hero-item {
+}
+.hero-link {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	letter-spacing: 0.2em;
+	color: var(--dark-title-color);
+}
+.hero-link:hover,
+.hero-link:focus {
+	color: var(--accent-color);
+}
+.hero-content {
+}
+.hero-pre-title {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+	font-family: "Raleway";
+	font-size: 72px;
+	line-height: 85px;
+	letter-spacing: 0.05em;
+	color: var(--light-text-color);
+}
+.hero-after-title {
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	color: var(--grey-text-color);
+}
+
+/* --------about-------- */
+
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-content {
+}
+.about-pre-title {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: var(--dark-title-color);
+}
+.about-title {
+	font-size: 42px;
+	line-height: 49px;
+	letter-spacing: 0.05em;
+	color: var(--dark-title-color);
+}
+.about-after-title {
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	color: var(--dark-text-color);
+}
+.about-text {
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: 0.02em;
+	color: var(--dark-text-color);
+}
+.about-btn {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: var(--dark-title-color);
+
+	border: 1px solid var(--accent-color);
+	border-radius: 25px;
+}
+.about-btn:hover,
+.about-btn:focus {
+	background: var(--accent-color);
+}
+
+/* --------services and prices-------- */
+
+.prices {
+}
+.prices-pre-title {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: rgba(157, 164, 189, 0.6);
+}
+.prices-title {
+	font-size: 42px;
+	line-height: 49px;
+	letter-spacing: 0.05em;
+	color: var(--light-text-color);
+}
+.prices-wrap {
+}
+.prices-list {
+}
+.prices-item {
+}
+.prices-list-text {
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	color: var(--grey-text-color);
+}
+.prices-btn {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: var(--light-text-color);
+
+	border: 1px solid var(--accent-color);
+	border-radius: 25px;
+}
+.prices-btn:hover,
+.prices-btn:focus {
+	background: var(--accent-color);
+}
+
+/* --------benefits-------- */
+
+.benefits {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-item > span {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 57px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: var(--dark-title-color);
+}
+.benefits-item > sup {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: var(--accent-color);
+}
+.benefits-item-text {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	color: var(--dark-title-color);
+}
+.benefits-pre-title {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: var(--dark-title-color);
+}
+.benefits-title {
+	font-size: 42px;
+	line-height: 49px;
+	letter-spacing: 0.05em;
+	color: var(--dark-title-color);
+}
+.benefits-after-title {
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	color: var(--dark-text-color);
+}
+
+/* --------our barbers-------- */
+
+.barbers {
+}
+.barbers-pre-title {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: var(--dark-title-color);
+}
+.barbers-title {
+	font-size: 42px;
+	line-height: 49px;
+	letter-spacing: 0.05em;
+	color: var(--dark-title-color);
+}
+.barbers-list {
+}
+.barbers-item {
+}
+.barbers-wrap {
+}
+.barbers-item-title {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--dark-title-color);
+}
+.barbers-item-text {
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--accent-color);
+}
+
+/* --------gallery-------- */
+
+.gallery {
+}
+.gallery-pre-title {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: var(--dark-title-color);
+}
+.gallery-list {
+}
+.gallery-item {
+}
+
+/* --------online-booking-------- */
+
+.online-booking {
+}
+
+/* --------contacts-------- */
+
+.contacts {
+}
+.contacts-title {
+	font-family: "Raleway";
+	font-size: 42px;
+	line-height: 49px;
+	letter-spacing: 0.05em;
+	color: var(--light-text-color);
+}
+.contacts-address {
+}
+.contacts-address-link {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	color: var(--grey-text-color);
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-tel {
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	color: var(--grey-text-color);
+}
+.contacts-mail {
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	color: var(--grey-text-color);
+}
+.contacts-pre-title {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: var(--light-text-color);
+}
+.contacts-text {
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	color: var(--grey-text-color);
+}
+
+/* --------footer-------- */
+
+.footer {
+}
+.footer-text {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	letter-spacing: 0.2em;
+	color: var(--grey-text-color);
+}
+.footer-list {
+}
+.footer-item {
+}
+.footer-link {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	letter-spacing: 0.2em;
+	color: var(--dark-title-color);
+}
