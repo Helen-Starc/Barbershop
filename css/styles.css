@@ -423,14 +423,18 @@ img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	fill: #303030;
+	color: #303030;
 }
 
 .barbers-soc-link:hover,
 .barbers-soc-link:focus {
-	fill: var(--accent-color);
+	color: var(--accent-color);
 }
 
+.barbers-soc-icon {
+	--icon-color: currentColor;
+	color: var(--icon-color);
+}
 /* .barbers-soc-iqon {
 	fill: currentColor;
 }
