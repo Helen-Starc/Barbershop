@@ -109,9 +109,10 @@ img {
 /* --------header-------- */
 
 .header {
-	background-color: var(--dark-background-color);
 	padding-top: 32px;
 	padding-bottom: 32px;
+	position: absolute;
+	width: 100%;
 }
 .header-flex-wrap,
 .header-connect {
