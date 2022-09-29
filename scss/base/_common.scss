@@ -1,0 +1,97 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	background-color: #fff;
+	color: $color-text-dark;
+	letter-spacing: 0.02em;
+
+	&.modal-open,
+	&.menu-open {
+		overflow: hidden;
+	}
+}
+
+.container {
+	outline: 2px solid red;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@include mobile {
+		width: 480px;
+		padding-left: 31px;
+		padding-right: 31px;
+	}
+
+	@include tablet {
+		width: 768px;
+		padding-left: 31px;
+		padding-right: 31px;
+	}
+
+	@include desctop {
+		width: 1200px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.btn {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: $color-text-dark;
+	text-align: center;
+
+	background-color: transparent;
+	border: 1px solid $color-accent;
+	border-radius: 25px;
+	padding: 12px 37px;
+	cursor: pointer;
+
+	transition: background-color $transition-duration $transition-function,
+		color $transition-duration $transition-function;
+
+	&:hover,
+	&:focus {
+		background-color: $color-accent;
+		color: $color-text-light;
+	}
+}
+
+.pre-title {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-transform: uppercase;
+}
+
+.title {
+	font-family: "Raleway";
+	font-size: 42px;
+	line-height: 1.17;
+	letter-spacing: 0.05em;
+}
+
+.after-title {
+	font-size: 18px;
+	line-height: 1.67;
+}
+
+.link {
+	transition: color $transition-duration $transition-function;
+
+	&:hover,
+	&:focus {
+		color: $color-accent;
+	}
+}
