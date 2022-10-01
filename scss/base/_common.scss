@@ -25,14 +25,14 @@ body {
 
 	@include tablet {
 		width: 768px;
-		padding-left: 31px;
-		padding-right: 31px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 
 	@include desctop {
-		width: 1200px;
-		padding-left: 15px;
-		padding-right: 15px;
+		width: 1170px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -42,12 +42,7 @@ body {
 }
 
 .btn {
-	font-family: inherit;
-	font-style: inherit;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 1.33;
-	letter-spacing: 0.09em;
+	@include font(600, 10px, 1.33, 0.09em);
 	text-transform: uppercase;
 	color: $color-text-dark;
 	text-align: center;
@@ -55,7 +50,7 @@ body {
 	background-color: transparent;
 	border: 1px solid $color-accent;
 	border-radius: 25px;
-	padding: 12px 37px;
+	padding: 12px 30px;
 	cursor: pointer;
 
 	transition: background-color $transition-duration $transition-function,
@@ -66,25 +61,56 @@ body {
 		background-color: $color-accent;
 		color: $color-text-light;
 	}
+
+	@include mobile {
+		@include font(null, 12px, null, null);
+		padding: 12px 37px;
+	}
+	@include tablet {
+		padding: 12px 20px;
+	}
 }
 
 .pre-title {
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1.36;
+	@include font(600, 9px, 1.36, 0.1em);
 	text-transform: uppercase;
+	color: rgba(157, 164, 189, 0.6);
+	@extend %align-list;
+
+	@include mobile {
+		@include font(null, 11px, null, null);
+	}
+
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 40px;
+		height: 1px;
+		background-color: currentColor;
+
+		margin-right: 20px;
+		@include mobile {
+			width: 60px;
+		}
+	}
+}
+
+.after-title {
+	@include font(null, 14px, 1.63, null);
+	color: $color-text-light-gray;
+
+	@include mobile {
+		@include font(null, 16px, null, null);
+	}
+
+	@include tablet {
+		@include font(null, 18px, 1.67, null);
+	}
 }
 
 .title {
 	font-family: "Raleway";
-	font-size: 42px;
-	line-height: 1.17;
-	letter-spacing: 0.05em;
-}
-
-.after-title {
-	font-size: 18px;
-	line-height: 1.67;
+	@include font(null, 42px, 1.17, 0.05em);
 }
 
 .link {

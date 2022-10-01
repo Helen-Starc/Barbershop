@@ -26,7 +26,11 @@
 	<body>
 		<header class="header">
 			<div class="container header__flex-wrap">
-				<a class="logo" href="./index.html"><img src="./img/logo.svg" alt="site logo" /></a>
+				<a class="logo link" href="#">
+					<svg class="logo__svg" width="70" height="55" aria-label="Barbershop-logo">
+						<use class="logo__icon" href="./img/icons.svg#icon-barbershop-logo"></use>
+					</svg>
+				</a>
 				<!-- mob-menu-button -->
 				<button class="menu-btn" type="button " aria-expanded="false" aria-controls="menu-container" data-menu-button>
 					<svg class="menu-btn__svg" width="40" height="40" aria-label="Menu button">
@@ -61,19 +65,26 @@
 		<main>
 			<!-- hero -->
 			<section class="hero">
-				<div class="container hero-flex-wrap">
-					<ul class="hero-list list">
-						<li class="hero-item">
-							<a href="#" class="hero-link link" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
+				<div class="hero__soc-wrap">
+					<a class="hero__logo link" href="#">
+						<svg class="hero__logo-svg" width="70" height="55" aria-label="Barbershop-logo">
+							<use class="hero__logo-icon" href="./img/icons.svg#icon-barbershop-logo"></use>
+						</svg>
+					</a>
+					<ul class="hero__soc-list">
+						<li class="hero__soc-item">
+							<a href="#" class="hero__soc-link link" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
 						</li>
-						<li class="hero-item">
-							<a href="#" class="hero-link link" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
+						<li class="hero__soc-item">
+							<a href="#" class="hero__soc-link link" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
 						</li>
 					</ul>
-					<div class="hero-content">
-						<p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
-						<h1 class="hero-title">BarberShop</h1>
-						<p class="hero-after-title after-title">
+				</div>
+				<div class="hero__content">
+					<div class="hero__container">
+						<p class="hero__pre-title pre-title">A hair salon for men in Kyiv</p>
+						<h1 class="hero__title">BarberShop</h1>
+						<p class="hero__after-title after-title">
 							We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
 						</p>
 					</div>

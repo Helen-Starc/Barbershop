@@ -1,0 +1,169 @@
+.hero {
+	position: relative;
+	display: flex;
+	width: 100%;
+
+	@include tablet {
+		padding-left: 39px;
+	}
+
+	@include desctop {
+		padding-left: 0;
+		margin: 0 auto;
+
+		width: 1170px;
+	}
+
+	&__soc-wrap {
+		display: none;
+
+		@include tablet {
+			width: 100px;
+			display: flex;
+			align-items: flex-end;
+			padding-left: 27px;
+			padding-bottom: 40px;
+
+			position: relative;
+		}
+	}
+
+	&__logo {
+		color: $color-text-dark;
+
+		position: absolute;
+		top: 32px;
+		left: 0;
+		z-index: 200;
+	}
+
+	&__logo-svg {
+		display: block;
+	}
+
+	&__logo-icon {
+		fill: currentColor;
+	}
+
+	&__soc-list {
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+
+		@include tablet {
+			display: flex;
+			align-items: center;
+
+			transform: rotate(-90deg) translateY(100%);
+			transform-origin: bottom left;
+			gap: 40px;
+		}
+
+		&::before {
+			content: "";
+			width: 60px;
+			height: 1px;
+			background-color: #303030;
+		}
+	}
+
+	&__soc-link {
+		@include font(600, 11px, 1.36, 0.2em);
+		color: $color-text-dark;
+
+		display: block;
+	}
+
+	&__content {
+		background-color: rgb(155, 153, 153);
+		background-image: url(../../img/hero-slider-mob-1.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+		padding-top: 208px;
+		padding-bottom: 209px;
+
+		@include retina {
+			background-image: url(../../img/hero-slider-mob-1-2x.jpg);
+		}
+
+		@media screen and (max-width: 767px) {
+			min-height: 580px;
+			margin: 0 auto;
+		}
+
+		@include tablet {
+			background-image: url(../../img/hero-slider-tab-1.jpg);
+			width: 605px;
+			height: 680px;
+
+			padding-top: 272px;
+			padding-bottom: 237px;
+			padding-left: 123px;
+			padding-right: 100px;
+
+			@include retina {
+				background-image: url(../../img/hero-slider-tab-1-2x.jpg);
+			}
+		}
+
+		@media screen and (max-width: 1169px) {
+			flex-grow: 1;
+		}
+
+		@include desctop {
+			background-image: url(../../img/hero-slider-desc-1.jpg);
+			width: 1070px;
+
+			padding-bottom: 208px;
+			padding-left: 100px;
+			padding-right: 525px;
+
+			@include retina {
+				background-image: url(../../img/hero-slider-desc-1-2x.jpg);
+			}
+		}
+	}
+
+	&__container {
+		@media screen and (max-width: 767px) {
+			max-width: 480px;
+			margin: 0 auto;
+			padding-left: 31px;
+			padding-right: 31px;
+		}
+	}
+
+	&__pre-title {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		font-family: "Raleway";
+		@include font(null, 40px, 1.17, 0.05em);
+		color: $color-text-light;
+
+		margin-bottom: 20px;
+
+		@include mobile {
+			@include font(null, 48px, null, null);
+		}
+
+		@include desctop {
+			@include font(null, 72px, null, null);
+		}
+	}
+
+	&__after-title {
+		max-width: 260px;
+
+		@include mobile {
+			max-width: 336px;
+		}
+
+		@include tablet {
+			max-width: 371px;
+		}
+	}
+}
